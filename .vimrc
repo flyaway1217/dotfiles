@@ -111,6 +111,6 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 " tabline中buffer显示编号
 let g:airline#extensions#tabline#buffer_nr_show = 1
 " 映射切换buffer的键位
-nnoremap <c-z> :bp<CR>
-nnoremap <c-x> :bn<CR>
+nnoremap <c-o> :bp<CR>
+nnoremap <c-p> :bn<CR>
 
