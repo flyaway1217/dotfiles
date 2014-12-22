@@ -48,6 +48,11 @@ endfunction
 :nmap <C-n> iif __name__=='__main__':<Esc>o
 
 
+auto VimEnter * :Voom python
+"wincmd p
+auto VimEnter * wincmd w
+
+
 :nmap <silent> <F8> :Voom python<CR>
 
 "设置代码折叠

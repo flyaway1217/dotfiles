@@ -12,6 +12,9 @@ Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'vim-scripts/VOoM'
 Bundle 'Yggdroot/indentLine'
 Bundle 'bling/vim-airline'
+Bundle 'scrooloose/nerdcommenter'
+Bundle "moll/vim-bbye"
+"Bundle 'vim-scripts/winmanager'
 "Bundle 'nathanaelkane/vim-indent-guides'
 
 
@@ -81,6 +84,13 @@ set shiftwidth=4
 :map <c-l> <c-w>l
 :map <c-h> <c-w>h
 
+set showmatch
+:inoremap ( ()<ESC>i
+:inoremap { {}<ESC>i
+:inoremap [ []<ESC>i
+:inoremap " ""<ESC>i
+
+
 
 au FileType python set omnifunc=pythoncomplete#Complete
 :let g:SuperTabDefaultCompleteType="context"
@@ -91,11 +101,22 @@ au FileType python set omnifunc=pythoncomplete#Complete
 :nmap <silent> <F10> :NERDTree<CR>
 :nmap <silent> <F9> :NERDTreeClose<CR>
 
+"configuration for the NERD
 let NERDChristmasTree=1
+let NERDTreeShowBookmarks=1
+let NERDTreeAutoCenter=1
 let NERDTreeWinPos = 'right'
-
+let NERDTreeShowFiles=1
+let NERDTreeShowLineNumbers=1
+auto VimEnter * NERDTree
 
 let g:indentLine_color_term=239
+
+auto VimEnter * wincmd w
+
+
+"BBye
+nnoremap bd :Bd<CR>
 
 
 " airline设置
