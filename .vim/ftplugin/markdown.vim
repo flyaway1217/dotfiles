@@ -74,3 +74,10 @@ endfunction
 
 :nmap <silent> <F3> :call ReportInsert()<CR>ggjjjA
 
+:nmap <silent> image  i![<ESC>A(/assets/image/posts/<ESC>a
+
+auto VimEnter * :Voom pandoc
+"wincmd p
+auto VimEnter * wincmd w
+
+

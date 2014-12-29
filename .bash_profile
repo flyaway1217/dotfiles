@@ -22,6 +22,8 @@ alias flask='source ~/workspace/ENV-flask/bin/activate'
 
 alias matplotlib='source ~/workspace/ENV-matplotlib/bin/activate'
 
+alias 32="ssh zhouyc@114.212.190.32"
+
 # Setting PATH for Python 3.4
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"

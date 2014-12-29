@@ -84,11 +84,14 @@ set shiftwidth=4
 :map <c-l> <c-w>l
 :map <c-h> <c-w>h
 
+
 set showmatch
 :inoremap ( ()<ESC>i
 :inoremap { {}<ESC>i
 :inoremap [ []<ESC>i
 :inoremap " ""<ESC>i
+:inoremap $ $$<ESC>i
+
 
 
 
@@ -122,7 +125,7 @@ nnoremap bd :Bd<CR>
 " airline设置
 set laststatus=2
 " 使用powerline打过补丁的字体
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
 " 开启tabline
 let g:airline#extensions#tabline#enabled = 1
 " tabline中当前buffer两端的分隔字符

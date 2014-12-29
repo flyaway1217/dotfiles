@@ -32,12 +32,10 @@ function! TitleInsert()
 	call append(8,"# Date: " . strftime("%Y-%m-%d %H:%M:%S"))
 	call append(9,"# Last modified: " . strftime("%Y-%m-%d %H:%M:%S"))
 	call append(10,"")
-	call append(11,'"""')
-	call append(12,'"""')
+	call append(11,"'''")
+	call append(12,"'''")
 	
 endfunction
-
-
 
 
 :autocmd FileWritePre,BufWritePre *.py ks|call DateInsert()|'s
@@ -46,7 +44,7 @@ endfunction
 :nmap <F5> :!python3 %<CR>
 :nmap <F6> :!python %<CR>
 :nmap <C-n> iif __name__=='__main__':<Esc>o
-
+:inoremap ' '''<ESC>o'''<ESC>O
 
 auto VimEnter * :Voom python
 "wincmd p
