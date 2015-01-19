@@ -1,14 +1,14 @@
 func! CompilRun()
 	exec "!clear"
 	exec "w"
-	exec "!cc % -g -o %<"
+	exec "!gcc % -o %< -lstdc++"
 	exec "!./%<"
 	exec "!rm %<"
 endfunc
 
 func! Debug()
 	exec "w"
-	exec "!cc % -g -o %<"
+	exec "!gcc % -o %<"
 	exec "!gdb %<"
 endfunc
 set smartindent
