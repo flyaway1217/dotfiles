@@ -45,6 +45,7 @@ endfunction
 :nmap <F6> :!python %<CR>
 :nmap <C-n> iif __name__=='__main__':<Esc>o
 :inoremap ' '''<ESC>o'''<ESC>O
+:inoremap , , <ESC>a
 
 auto VimEnter * :Voom python
 "wincmd p
