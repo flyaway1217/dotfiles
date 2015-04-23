@@ -24,6 +24,9 @@ Bundle "moll/vim-bbye"
 "Bundle 'https://github.com/tpope/vim-git.git'
 Bundle 'https://github.com/ervandew/supertab.git'
 Bundle 'https://github.com/rizzatti/dash.vim.git'
+"Bundle 'https://github.com/kshenoy/vim-signature.git'
+Bundle 'https://github.com/majutsushi/tagbar.git'
+
 "Bundle 'https://github.com/sontek/minibufexpl.vim.git'
 "Bundle 'https://github.com/wincent/Command-T.git'
 "Bundle 'https://github.com/mitechie/pyflakes-pathogen.git'
