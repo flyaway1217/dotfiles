@@ -57,5 +57,7 @@ auto VimEnter * wincmd w
 "设置代码折叠
 set fdm=indent
 
-:nmap Q zc
+"启动vim时关闭折叠代码
+set nofoldenable
+
 

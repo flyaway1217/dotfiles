@@ -91,3 +91,13 @@ let g:tagbar_type_cpp = {
          \ 'union'     : 'u'
      \ }
 \ }
+
+
+" 基于语法进行代码折叠
+set foldmethod=syntax
+
+"启动vim时关闭折叠代码
+set nofoldenable
+
+
+:inoremap , , <ESC>a
