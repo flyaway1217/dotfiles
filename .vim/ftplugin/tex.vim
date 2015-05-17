@@ -25,3 +25,7 @@ endfunction
 
 :nmap <F5> :call PdfLatex()<CR>
 :nmap <F6> :!pdflatex %<CR>
+
+auto VimEnter * :Voom latex
+
+:nmap <silent> <F8> :Voom latex<CR>
