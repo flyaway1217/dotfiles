@@ -12,19 +12,16 @@ set foldmethod=indent
 set foldlevel=99
 
 
-function! PdfLatex()
+function! Pdf()
 	exec "w"
-	exec ":silent !del %<.pdf"
-	exec ":silent !pdfLatex %"
-	exec ":silent !del %<.pdf"
+	exec ":silent !xelatex %"
 	exec ":silent !bibtex %<.aux %"
-	exec ":silent !pdfLatex %"
-	exec ":silent !del %<.pdf"
-	exec ":silent !pdfLatex %"
+	exec ":silent !xelatex %"
+	exec ":silent !xelatex %"
 endfunction
 
-:nmap <F5> :call PdfLatex()<CR>
-:nmap <F6> :!pdflatex %<CR>
+:nmap <F5> :!xelatex %<CR>
+:nmap <F6> :call Pdf() <CR>
 
 auto VimEnter * :Voom latex
 
