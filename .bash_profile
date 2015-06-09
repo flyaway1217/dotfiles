@@ -6,13 +6,15 @@ alias runblog='cd ~/blog/;jekyll serve --watch '
 
 alias dirblog='cd ~/blog/'
 
+alias dirpaper='cd ~/Dropbox/MyPapers/'
+
 alias ALi='ssh root@42.121.109.165'
 
 alias vim='/opt/local/bin/vim'
 
 alias workdir='cd ~/workspace'
 
-alias reportdir='cd ~/Documents/组内日常/讨论记录'
+alias reportdir='cd ~/Dropbox/组内日常/讨论记录'
 
 alias NLTK='source ~/workspace/ENV-NLTK/bin/activate'
 
