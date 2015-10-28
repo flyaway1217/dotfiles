@@ -26,6 +26,8 @@ alias matplotlib='source ~/workspace/ENV-matplotlib/bin/activate'
 
 alias 32="ssh zhouyc@114.212.190.32"
 
+alias 62="ssh zhouyc@114.212.189.62"
+
 alias ctags="`brew --prefix`/bin/ctags"
 
 # Setting PATH for Python 3.4
