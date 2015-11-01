@@ -1,8 +1,8 @@
 alias ll="ls -ahlF"
 
-alias testblog='cd ~/blog/;jekyll serve --watch --drafts'
+alias testblog='cd ~/blog/;bundle exec jekyll serve --watch --drafts'
 
-alias runblog='cd ~/blog/;jekyll serve --watch '
+alias runblog='cd ~/blog/;bundle exec jekyll serve --watch '
 
 alias dirblog='cd ~/blog/'
 
