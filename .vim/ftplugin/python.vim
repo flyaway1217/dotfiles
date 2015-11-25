@@ -32,8 +32,8 @@ function! TitleInsert()
 	call append(8,"# Date: " . strftime("%Y-%m-%d %H:%M:%S"))
 	call append(9,"# Last modified: " . strftime("%Y-%m-%d %H:%M:%S"))
 	call append(10,"")
-	call append(11,"'''")
-	call append(12,"'''")
+	call append(11,'"""')
+	call append(12,'"""')
 	
 endfunction
 
@@ -44,7 +44,7 @@ endfunction
 :nmap <F5> :!python3 %<CR>
 :nmap <F6> :!python %<CR>
 :nmap <C-n> iif __name__=='__main__':<Esc>o
-:inoremap ' '''<ESC>o'''<ESC>O
+:inoremap " """<ESC>o"""<ESC>O
 :inoremap , , <ESC>a
 
 auto VimEnter * :Voom python
