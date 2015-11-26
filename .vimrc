@@ -93,9 +93,8 @@ set showmatch
 :inoremap { {}<ESC>i
 :inoremap [ []<ESC>i
 :inoremap " ""<ESC>i
+:inoremap ' ''<ESC>i
 :inoremap $ $$<ESC>i
-
-
 
 
 au FileType python set omnifunc=pythoncomplete#Complete
