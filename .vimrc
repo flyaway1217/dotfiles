@@ -14,6 +14,7 @@ Bundle 'Yggdroot/indentLine'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdcommenter'
 Bundle "moll/vim-bbye"
+Bundle "tmhedberg/SimpylFold"
 "Bundle 'vim-scripts/winmanager'
 "Bundle 'nathanaelkane/vim-indent-guides'
 
