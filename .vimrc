@@ -1,59 +1,60 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmark/vundle'
+Plugin 'VundleVim/Vundle.vim'
+"Bundle 'gmarik/Vundle'
 "Bundle 'vim-pandoc/vim-pandoc'
 
-Bundle 'vim-scripts/The-NERD-tree'
+Plugin 'vim-scripts/The-NERD-tree'
 
-Bundle 'vim-scripts/VOoM'
-Bundle 'Yggdroot/indentLine'
-Bundle 'bling/vim-airline'
-Bundle 'scrooloose/nerdcommenter'
-Bundle "moll/vim-bbye"
-Bundle "tmhedberg/SimpylFold"
-"Bundle 'vim-scripts/winmanager'
-"Bundle 'nathanaelkane/vim-indent-guides'
+Plugin 'vim-scripts/VOoM'
+Plugin 'Yggdroot/indentLine'
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/nerdcommenter'
+"Plugin "moll/vim-bbye"
+"Plugin "tmhedberg/SimpylFold"
+Plugin 'https://github.com/scrooloose/syntastic.git'
+"Plugin 'vim-scripts/winmanager'
+"Plugin 'nathanaelkane/vim-indent-guides'
 
+Plugin 'https://github.com/vim-scripts/bbye.git'
 
-"Bundle 'https://github.com/tpope/vim-fugitive.git'
-"Bundle 'https://github.com/msanders/snipmate.vim.git'
-"Bundle 'https://github.com/tpope/vim-surround.git'
-"Bundle 'https://github.com/tpope/vim-git.git'
-Bundle 'https://github.com/ervandew/supertab.git'
-Bundle 'https://github.com/rizzatti/dash.vim.git'
-"Bundle 'https://github.com/kshenoy/vim-signature.git'
-Bundle 'https://github.com/majutsushi/tagbar.git'
+"Plugin 'https://github.com/tpope/vim-fugitive.git'
+"Plugin 'https://github.com/msanders/snipmate.vim.git'
+"Plugin 'https://github.com/tpope/vim-surround.git'
+"Plugin 'https://github.com/tpope/vim-git.git'
+Plugin 'https://github.com/ervandew/supertab.git'
+Plugin 'https://github.com/rizzatti/dash.vim.git'
+"Plugin 'https://github.com/kshenoy/vim-signature.git'
+Plugin 'https://github.com/majutsushi/tagbar.git'
 
-"Bundle 'https://github.com/sontek/minibufexpl.vim.git'
-"Bundle 'https://github.com/wincent/Command-T.git'
-"Bundle 'https://github.com/mitechie/pyflakes-pathogen.git'
-"Bundle 'https://github.com/nathanaelkane/vim-indent-guides'
-"Bundle 'https://github.com/mileszs/ack.vim.git'
-"Bundle 'https://github.com/sjl/gundo.vim.git'
-"Bundle 'https://github.com/fs111/pydoc.vim.git'
-"Bundle 'https://github.com/vim-scripts/pep8.git'
-"Bundle 'https://github.com/alfredodeza/pytest.vim.git'
-"Bundle 'https://github.com/reinh/vim-makegreen'
-"Bundle 'https://github.com/vim-scripts/TaskList.vim.git'
-"Bundle 'https://github.com/sontek/rope-vim.git'
+"Plugin 'https://github.com/sontek/minibufexpl.vim.git'
+"Plugin 'https://github.com/wincent/Command-T.git'
+"Plugin 'https://github.com/mitechie/pyflakes-pathogen.git'
+"Plugin 'https://github.com/nathanaelkane/vim-indent-guides'
+"Plugin 'https://github.com/mileszs/ack.vim.git'
+"Plugin 'https://github.com/sjl/gundo.vim.git'
+"Plugin 'https://github.com/fs111/pydoc.vim.git'
+"Plugin 'https://github.com/vim-scripts/pep8.git'
+"Plugin 'https://github.com/alfredodeza/pytest.vim.git'
+"Plugin 'https://github.com/reinh/vim-makegreen'
+"Plugin 'https://github.com/vim-scripts/TaskList.vim.git'
+"Plugin 'https://github.com/sontek/rope-vim.git'
 
+call vundle#end()
 filetype plugin indent on
 
-"Brief help
-" :BundleList		-list configured bundles
-" :BundleInstall(!)	-install(updte) bundles
-" :BundleSearch(!)foo	- search(or refresh cache first) for foo
-" :BundleClean(!)	- confirm(or auto-approve) removal of unused bundles
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
 "
 " see :h vundle for more details or wiki for FAQ
-"
-"end of vundle
-"-----------------------------------------------------------
-
+" Put your non-Plugin stuff after this line
 
 set number
 colorscheme desert
@@ -140,4 +141,16 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 " 映射切换buffer的键位
 nnoremap <c-o> :bp<CR>
 nnoremap <c-p> :bn<CR>
+
+
+" Recommended settings for Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_python_checkers=["flake8", "pep257"]
 
