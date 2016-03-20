@@ -1,10 +1,12 @@
 alias ll="ls -ahlF"
 
-alias testblog='cd ~/blog/;bundle exec jekyll serve --watch --drafts'
+alias runblog='cd ~/workspace/Blog/;hexo server'
 
-alias runblog='cd ~/blog/;bundle exec jekyll serve --watch '
+alias dirblog='cd ~/workspace/Blog/'
 
-alias dirblog='cd ~/blog/'
+alias runweek='cd ~/workspace/Weekly;gitbook serve'
+
+alias dirweek='cd ~/workspace/Weekly'
 
 alias dirpaper='cd ~/Dropbox/MyPapers/'
 
