@@ -37,7 +37,7 @@ function! TitleInsert()
 	
 endfunction
 
-function CommentBlock()
+function! CommentBlock()
     "" Indent 
     :let s:myline = nextnonblank(".")
     :let s:myindent = indent(s:myline)
