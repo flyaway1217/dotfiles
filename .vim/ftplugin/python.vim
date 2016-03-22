@@ -37,10 +37,37 @@ function! TitleInsert()
 	
 endfunction
 
+function CommentBlock()
+    "" Indent 
+    :let s:myline = nextnonblank(".")
+    :let s:myindent = indent(s:myline)
+ 
+    " Make the string
+    :let s:s = ""
+    :let s:s2 = ""
+    :let s:i = 0
+
+    while s:i < s:myindent
+    : let s:s = s:s . " "
+    : let s:s2 = s:s2 . " "
+    : let s:i += 1
+    :endwhile
+
+    :for i in range(1, 60-s:myindent)
+    :	let s:s = s:s . "#"
+    :endfor
+
+    :let s:myline = line(".")
+    call setline(s:myline, s:s)
+    call append(s:myline, s:s2 . "#")
+    call append(s:myline+1, s:s)
+endfunction
+
 
 :autocmd FileWritePre,BufWritePre *.py ks|call DateInsert()|'s
 
 :nmap <F2> :call TitleInsert()<CR>12Go
+:nmap <F3> :call CommentBlock()<CR>jA 
 :nmap <F5> :!python3 %<CR>
 :nmap <F6> :!python %<CR>
 :nmap <C-n> iif __name__=='__main__':<Esc>o
