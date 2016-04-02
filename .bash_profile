@@ -1,12 +1,14 @@
 alias ll="ls -ahlF"
 
-alias runblog='cd ~/workspace/Blog/;hexo server'
+alias DO='ssh flyaway@104.236.134.157'
 
-alias dirblog='cd ~/workspace/Blog/'
+alias runblog='cd ~/Dropbox/Blog/;hexo server'
 
-alias runweek='cd ~/workspace/Weekly;gitbook serve'
+alias dirblog='cd ~/Dropbox/Blog/'
 
-alias dirweek='cd ~/workspace/Weekly'
+alias runweek='cd ~/Dropbox/Weekly;gitbook serve'
+
+alias dirweek='cd ~/Dropbox/Weekly'
 
 alias dirpaper='cd ~/Dropbox/MyPapers/'
 
