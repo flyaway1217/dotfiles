@@ -20,7 +20,7 @@ function! Pdf()
 	exec ":silent !xelatex %"
 endfunction
 
-:nmap <F5> :!pdflatex %<CR>
+:nmap <F5> :!xelatex %<CR>
 
 auto VimEnter * :Voom latex
 
