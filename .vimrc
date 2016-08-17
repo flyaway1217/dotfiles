@@ -8,6 +8,8 @@ Plugin 'VundleVim/Vundle.vim'
 "Bundle 'gmarik/Vundle'
 "Bundle 'vim-pandoc/vim-pandoc'
 
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 Plugin 'vim-scripts/The-NERD-tree'
 
 Plugin 'vim-scripts/VOoM'
