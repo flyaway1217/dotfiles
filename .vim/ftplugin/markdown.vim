@@ -6,6 +6,8 @@ set shiftwidth=4
 set expandtab
 set foldmethod=indent
 set foldlevel=99
+set complete+=kspell
+set spell
 
 "映射代码区段
 :map <S-h> o{% highlight %}<Esc>o{% endhighlight %}<Esc>khhi
