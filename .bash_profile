@@ -8,7 +8,7 @@ alias course='cd ~/Dropbox/Utah/Courses/'
 
 alias dirblog='cd ~/Dropbox/Blog/'
 
-alias runweek='cd ~/Dropbox/Weekly;gitbook serve'
+alias runweek='cd ~/Dropbox/Weekly;gitbook --port 8000 serve'
 
 alias dirweek='cd ~/Dropbox/Weekly'
 
