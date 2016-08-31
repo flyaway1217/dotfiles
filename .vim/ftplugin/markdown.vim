@@ -9,10 +9,6 @@ set foldlevel=99
 "set complete+=kspell
 "set spell
 
-"映射代码区段
-:map <S-h> o{% highlight %}<Esc>o{% endhighlight %}<Esc>khhi
-"映射公式区段
-:map <C-n> o$$<Esc>o\begin{equation}<Esc>o\end{equation}<Esc>o$$<Esc>kO
 
 "映射标题
 :map <M-F1> ^i#<Esc>$a#<Esc>i
@@ -34,14 +30,6 @@ function! TitleInsert()
 	call append(7,"description: ")
 	call append(8,"---")
 endfunction
-
-function! ReportInsert()
-	call setline(1,"#工作安排")
-	call append(1,"#工作进展")
-	call append(2,"#遇到的问题")
-	call append(3,"#思考总结")
-endfunction
-
 
 function! ToHtml()
 	exec 'w'
@@ -76,7 +64,8 @@ endfunction
 
 :nmap <silent> <F3> :call ReportInsert()<CR>ggjjjA
 
-:nmap <silent> image  i![<ESC>A(/assets/image/posts/<ESC>a
+:nmap <silent> image  i<ESC>A{% aseet_img %<ESC>i <ESC>i
+:nmap <silent> math i<ESC>A{% math %<ESC>o{% endmath %<ESC>k<ESC>o
 
 auto VimEnter * :Voom pandoc
 "wincmd p
