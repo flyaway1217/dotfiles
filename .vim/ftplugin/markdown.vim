@@ -64,7 +64,7 @@ endfunction
 
 :nmap <silent> <F3> :call ReportInsert()<CR>ggjjjA
 
-:nmap <silent> image  i<ESC>A{% aseet_img %<ESC>i <ESC>i
+:nmap <silent> image  i<ESC>A{% asset_img %<ESC>i <ESC>i
 :nmap <silent> math i<ESC>A{% math %<ESC>o{% endmath %<ESC>k<ESC>o
 
 auto VimEnter * :Voom pandoc
