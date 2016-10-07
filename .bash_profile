@@ -20,17 +20,17 @@ alias workdir='cd ~/workspace'
 
 alias reportdir='cd ~/Dropbox/组内日常/讨论记录'
 
-alias NLTK='source ~/workspace/ENV-NLTK/bin/activate'
+alias NLTK='source ~/workspace/ENV/ENV-NLTK/bin/activate'
 
-alias GraphParser='source ~/workspace/ENV-GraphParser/bin/activate'
+alias GraphParser='source ~/workspace/ENV/ENV-GraphParser/bin/activate'
 
-alias Web='source ~/workspace/ENV-Web/bin/activate'
+alias Web='source ~/workspace/ENV/ENV-Web/bin/activate'
 
-alias tensorflow='source ~/workspace/ENV-tensorflow/bin/activate'
+alias tensorflow='source ~/workspace/ENV/ENV-tensorflow/bin/activate'
 
-alias flask='source ~/workspace/ENV-flask/bin/activate'
+alias flask='source ~/workspace/ENV/ENV-flask/bin/activate'
 
-alias matplotlib='source ~/workspace/ENV-matplotlib/bin/activate'
+alias matplotlib='source ~/workspace/ENV/ENV-matplotlib/bin/activate'
 
 alias ctags="`brew --prefix`/bin/ctags"
 
