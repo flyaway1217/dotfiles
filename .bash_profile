@@ -2,11 +2,11 @@ alias ll="ls -ahlF"
 
 alias DO='ssh flyaway@104.236.134.157'
 
-alias runblog='cd ~/Dropbox/Blog/;hexo server'
+alias runblog='cd ~/workspace/Git/Blog/;hexo server'
 
 alias course='cd ~/Dropbox/Utah/Courses/'
 
-alias dirblog='cd ~/Dropbox/Blog/'
+alias dirblog='cd ~/workspace/Git/Blog/'
 
 alias runweek='cd ~/Dropbox/Weekly;gitbook serve --port 8000 --no-watch'
 
@@ -32,7 +32,7 @@ alias flask='source ~/workspace/ENV/ENV-flask/bin/activate'
 
 alias matplotlib='source ~/workspace/ENV/ENV-matplotlib/bin/activate'
 
-alias nosetest='nosetests --with-coverage --cover-html -v'
+alias nosetest='nosetests --with-coverage --cover-html --cover-html-dir=htmlcov -v'
 
 alias ctags="`brew --prefix`/bin/ctags"
 
