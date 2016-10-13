@@ -32,6 +32,8 @@ alias flask='source ~/workspace/ENV/ENV-flask/bin/activate'
 
 alias matplotlib='source ~/workspace/ENV/ENV-matplotlib/bin/activate'
 
+alias nosetest='nosetests --with-coverage --cover-html -v'
+
 alias ctags="`brew --prefix`/bin/ctags"
 
 # Setting PATH for Python 3.4
