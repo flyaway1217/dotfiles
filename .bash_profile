@@ -32,7 +32,7 @@ alias flask='source ~/workspace/ENV/ENV-flask/bin/activate'
 
 alias matplotlib='source ~/workspace/ENV/ENV-matplotlib/bin/activate'
 
-alias nosetest='nosetests --with-coverage --cover-html --cover-html-dir=htmlcov -v'
+# alias nosetest='nosetests --with-coverage --cover-html --cover-html-dir=htmlcov -v'
 
 alias ctags="`brew --prefix`/bin/ctags"
 
