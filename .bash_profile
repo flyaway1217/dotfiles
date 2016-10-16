@@ -20,17 +20,9 @@ alias workdir='cd ~/workspace'
 
 alias reportdir='cd ~/Dropbox/组内日常/讨论记录'
 
-alias NLTK='source ~/workspace/ENV/ENV-NLTK/bin/activate'
+alias build='python setup.py sdist bdist_wheel'
 
-alias GraphParser='source ~/workspace/ENV/ENV-GraphParser/bin/activate'
-
-alias Web='source ~/workspace/ENV/ENV-Web/bin/activate'
-
-alias tensorflow='source ~/workspace/ENV/ENV-tensorflow/bin/activate'
-
-alias flask='source ~/workspace/ENV/ENV-flask/bin/activate'
-
-alias matplotlib='source ~/workspace/ENV/ENV-matplotlib/bin/activate'
+alias upload='twine upload dist/* --skip-existing'
 
 # alias nosetest='nosetests --with-coverage --cover-html --cover-html-dir=htmlcov -v'
 
