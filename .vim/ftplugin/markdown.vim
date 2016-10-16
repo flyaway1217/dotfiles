@@ -60,14 +60,14 @@ endfunction
 :nmap <silent> <F7> :call ToPdf1()<CR>
 
 
-:nmap <silent> <F8> :Voom pandoc<CR>
+:nmap <silent> <F8> :Voom markdown<CR>
 
 :nmap <silent> <F3> :call ReportInsert()<CR>ggjjjA
 
 :nmap <silent> image  i<ESC>A{% asset_img %<ESC>i <ESC>i
 :nmap <silent> math i<ESC>A{% math %<ESC>o{% endmath %<ESC>k<ESC>o
 
-auto VimEnter * :Voom pandoc
+auto VimEnter * :Voom markdown
 "wincmd p
 auto VimEnter * wincmd w
 
