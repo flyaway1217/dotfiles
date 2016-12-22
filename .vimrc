@@ -33,6 +33,9 @@ Plugin 'https://github.com/rizzatti/dash.vim.git'
 "Plugin 'https://github.com/kshenoy/vim-signature.git'
 Plugin 'https://github.com/majutsushi/tagbar.git'
 
+"JavaScript"
+Plugin 'https://github.com/pangloss/vim-javascript.git'
+
 "Plugin 'https://github.com/sontek/minibufexpl.vim.git'
 "Plugin 'https://github.com/wincent/Command-T.git'
 "Plugin 'https://github.com/mitechie/pyflakes-pathogen.git'
