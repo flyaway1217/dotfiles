@@ -14,5 +14,4 @@ set foldlevel=99
 
 
 :nmap <F5> :!node %<CR>
-
-
+:inoremap , , <ESC>a
