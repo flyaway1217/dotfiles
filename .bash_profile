@@ -4,11 +4,11 @@ alias DO='ssh flyaway@104.236.134.157'
 
 alias lab='ssh yichuz@lab2-1.eng.utah.edu'
 
-alias runblog='cd ~/workspace/Git/Blog/;hexo server'
+alias runblog='cd ~/workspace/Git/CNBlog/;hexo server'
 
 alias course='cd ~/Dropbox/Utah/Courses/'
 
-alias dirblog='cd ~/workspace/Git/Blog/'
+alias dirblog='cd ~/workspace/Git/CNBlog/'
 
 alias runweek='cd ~/Dropbox/Weekly;gitbook serve --port 8000 --no-watch'
 
