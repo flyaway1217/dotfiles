@@ -25,3 +25,5 @@ endfunction
 auto VimEnter * :Voom latex
 
 :nmap <silent> <F8> :Voom latex<CR>
+:nmap <silent> math i<ESC>A\begin{equation<ESC>o\end{equation<ESC>k<ESC>o
+
