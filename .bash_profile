@@ -10,11 +10,13 @@ alias course='cd ~/Dropbox/Utah/Courses/'
 
 alias dirblog='cd ~/workspace/Git/CNBlog/'
 
-alias runweek='cd ~/Dropbox/个人管理/目标统计报表/2017/Diary/February/;gitbook serve --port 8000 --no-watch'
+alias runweek='cd ~/Dropbox/个人管理/目标统计报表/2017/Diary/April/;gitbook serve --port 8000 --no-watch'
 
-alias dirweek='cd ~/Dropbox/个人管理/目标统计报表/2017/Diary/February/'
+alias dirweek='cd ~/Dropbox/个人管理/目标统计报表/2017/Diary/April/'
 
 alias dirpaper='cd ~/Dropbox/MyPapers/'
+
+alias WSABIE='cd ~/workspace/Git/WSABIE/wsabie'
 
 alias vim='/opt/local/bin/vim'
 
