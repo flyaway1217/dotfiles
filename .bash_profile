@@ -10,9 +10,9 @@ alias course='cd ~/Dropbox/Utah/Courses/'
 
 alias dirblog='cd ~/workspace/Git/CNBlog/'
 
-alias runweek='cd ~/Dropbox/个人管理/目标统计报表/2017/Diary/April/;gitbook serve --port 8000 --no-watch'
+alias runweek='cd ~/Dropbox/个人管理/目标统计报表/2017/Diary/May/;gitbook serve --port 8000 --no-watch'
 
-alias dirweek='cd ~/Dropbox/个人管理/目标统计报表/2017/Diary/April/'
+alias dirweek='cd ~/Dropbox/个人管理/目标统计报表/2017/Diary/May/'
 
 alias dirpaper='cd ~/Dropbox/MyPapers/'
 
@@ -27,6 +27,8 @@ alias reportdir='cd ~/Dropbox/组内日常/讨论记录'
 alias build='python setup.py sdist bdist_wheel'
 
 alias upload='twine upload dist/* --skip-existing'
+
+alias workserver='ssh flyaway@psmith.cs.utah.edu'
 
 # alias nosetest='nosetests --with-coverage --cover-html --cover-html-dir=htmlcov -v'
 

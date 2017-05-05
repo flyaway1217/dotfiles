@@ -21,6 +21,7 @@ function! Pdf()
 endfunction
 
 :nmap <F5> :!xelatex %<CR>
+:inoremap $ $$<ESC>i
 
 auto VimEnter * :Voom latex
 
