@@ -59,6 +59,7 @@ endfunction
 :nmap <silent> <F6> :call ToPdf0()<CR>
 :nmap <silent> <F7> :call ToPdf1()<CR>
 
+:inoremap $ $$<ESC>i
 
 :nmap <silent> <F8> :Voom markdown<CR>
 
