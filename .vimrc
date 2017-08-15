@@ -35,6 +35,7 @@ Plugin 'https://github.com/majutsushi/tagbar.git'
 
 "JavaScript"
 Plugin 'https://github.com/pangloss/vim-javascript.git'
+"Plugin 'https://github.com/vim-latex/vim-latex.git'
 
 "Plugin 'https://github.com/sontek/minibufexpl.vim.git'
 "Plugin 'https://github.com/wincent/Command-T.git'
@@ -160,3 +161,6 @@ let g:syntastic_python_checkers=["flake8"]
 let g:syntastic_json_checkers=["JSONLint"]
 let g:syntastic_javascript_checkers=["jshint"]
 
+if has("autocmd")
+    au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+endif
