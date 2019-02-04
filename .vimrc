@@ -168,4 +168,3 @@ if has("autocmd")
 endif
 
 
-:set textwidth=60 fo+=mM

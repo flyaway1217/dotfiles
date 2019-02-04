@@ -24,7 +24,10 @@ endfunction
 :inoremap $ $$<ESC>i
 
 auto VimEnter * :Voom latex
+auto VimEnter * wincmd w
 
 :nmap <silent> <F8> :Voom latex<CR>
+
 :nmap <silent> math i<ESC>A\begin{equation<ESC>o\end{equation<ESC>k<ESC>o
 
+:set textwidth=60 fo+=mM
