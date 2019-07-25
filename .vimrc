@@ -19,11 +19,13 @@ Plugin 'scrooloose/nerdcommenter'
 "Plugin "moll/vim-bbye"
 "Plugin "tmhedberg/SimpylFold"
 Plugin 'https://github.com/scrooloose/syntastic.git'
+Plugin 'https://github.com/nathangrigg/vim-beancount.git'
 "Plugin 'vim-scripts/winmanager'
 "Plugin 'nathanaelkane/vim-indent-guides'
 
 Plugin 'https://github.com/vim-scripts/bbye.git'
 Plugin 'https://github.com/vim-scripts/svg.vim.git'
+Plugin 'zxqfl/tabnine-vim'
 
 "Plugin 'https://github.com/tpope/vim-fugitive.git'
 "Plugin 'https://github.com/msanders/snipmate.vim.git'
