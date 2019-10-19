@@ -20,15 +20,14 @@ set foldlevel=99
 
 
 function! TitleInsert()
-	call setline(1,"---")
-	call append(1,"layout: post")
-	call append(2,"time: " . strftime("%Y-%m-%d"))
-	call append(3,"title: ")
-	call append(4,"category: ")
-	call append(5,"keywords: ")
-	call append(6,"tags: ")
-	call append(7,"description: ")
-	call append(8,"---")
+	call setline(1,"Title: ")
+	call append(1,"Date: " . strftime("%Y-%m-%d"))
+	call append(2,"Category: ")
+	call append(3,"Keywords: ")
+	call append(4,"Tags: ")
+	call append(5,"Summary: ")
+	call append(6,"Slug: ")
+	call append(7,"Comment_id:")
 endfunction
 
 function! ToHtml()
@@ -49,10 +48,7 @@ endfunction
 
 
 
-
-
-
-:nmap <silent> <F2> :call TitleInsert()<CR>ggjjjA
+:nmap <silent> <F2> :call TitleInsert()<CR>ggA
 ":nmap <silent> <F3> :call DiaryInsert()<CR>ggjjjA
 
 :nmap <silent> <F5> :call ToHtml()<CR>
