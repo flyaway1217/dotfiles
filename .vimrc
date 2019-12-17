@@ -23,6 +23,7 @@ Plugin 'https://github.com/scrooloose/syntastic.git'
 Plugin 'https://github.com/nathangrigg/vim-beancount.git'
 "Plugin 'vim-scripts/winmanager'
 "Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'tpope/vim-fugitive'
 
 Plugin 'https://github.com/moll/vim-bbye'
 Plugin 'https://github.com/vim-scripts/svg.vim.git'
