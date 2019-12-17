@@ -10,11 +10,12 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-Plugin 'vim-scripts/The-NERD-tree'
+Plugin 'scrooloose/nerdtree'
 
-Plugin 'vim-scripts/VOoM'
+Plugin 'vim-voom/VooM'
 Plugin 'Yggdroot/indentLine'
 Plugin 'bling/vim-airline'
+"Plugin 'lokaltog/vim-powerline'
 Plugin 'scrooloose/nerdcommenter'
 "Plugin "moll/vim-bbye"
 "Plugin "tmhedberg/SimpylFold"
@@ -23,7 +24,7 @@ Plugin 'https://github.com/nathangrigg/vim-beancount.git'
 "Plugin 'vim-scripts/winmanager'
 "Plugin 'nathanaelkane/vim-indent-guides'
 
-Plugin 'https://github.com/vim-scripts/bbye.git'
+Plugin 'https://github.com/moll/vim-bbye'
 Plugin 'https://github.com/vim-scripts/svg.vim.git'
 Plugin 'zxqfl/tabnine-vim'
 
