@@ -27,7 +27,7 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'https://github.com/moll/vim-bbye'
 Plugin 'https://github.com/vim-scripts/svg.vim.git'
-Plugin 'zxqfl/tabnine-vim'
+"Plugin 'zxqfl/tabnine-vim'
 
 "Plugin 'https://github.com/tpope/vim-fugitive.git'
 "Plugin 'https://github.com/msanders/snipmate.vim.git'

@@ -14,3 +14,4 @@ auto VimEnter * :Voom rest
 auto VimEnter * wincmd w
 
 
+:set textwidth=60 fo+=mM

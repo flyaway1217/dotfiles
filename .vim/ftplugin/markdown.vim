@@ -67,5 +67,4 @@ endfunction
 auto VimEnter * :Voom markdown
 "wincmd p
 auto VimEnter * wincmd w
-
-
+:set textwidth=60 fo+=mM
