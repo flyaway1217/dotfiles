@@ -27,7 +27,8 @@ Plugin 'tpope/vim-fugitive'
 
 Plugin 'https://github.com/moll/vim-bbye'
 Plugin 'https://github.com/vim-scripts/svg.vim.git'
-Plugin 'zxqfl/tabnine-vim'
+"Plugin 'zxqfl/tabnine-vim'
+"Plugin 'valloric/youcompleteme'
 
 "Plugin 'https://github.com/tpope/vim-fugitive.git'
 "Plugin 'https://github.com/msanders/snipmate.vim.git'
@@ -162,7 +163,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_python_checkers=["flake8"]
+let g:syntastic_python_checkers=["flake8", 'mypy']
 let g:syntastic_json_checkers=["JSONLint"]
 let g:syntastic_javascript_checkers=["jshint"]
 let g:syntastic_rst_checkers=["sphinx"]
