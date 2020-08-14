@@ -18,16 +18,25 @@ set foldlevel=99
 "md文件映射YAML
 ":map <F2> ggO---<Esc>olayout:<Esc>otitle:<Esc>otime:<Esc>ocategory:<Esc>o---<Esc>ggjA
 
+function! DateInsert()
+	call cursor(7,1)
+	if search('Modified') != 0
+		let line = line('.')
+		call setline(line,"Modified: " . strftime("%Y-%m-%d %H:%M"))
+	endif
+endfunction
 
 function! TitleInsert()
 	call setline(1,"Title: ")
-	call append(1,"Date: " . strftime("%Y-%m-%d"))
-	call append(2,"Category: ")
-	call append(3,"Keywords: ")
-	call append(4,"Tags: ")
-	call append(5,"Summary: ")
-	call append(6,"Slug: ")
-	call append(7,"Comment_id:")
+	call append(1,"Date: " . strftime("%Y-%m-%d %H:%M"))
+    call append(2,"Modified: ". strftime("%Y-%m-%d %H:%M"))
+	call append(3,"Category: ")
+	call append(4,"Keywords: ")
+	call append(5,"Tags: ")
+	call append(6,"Summary: ")
+	call append(7,"Slug: ")
+	call append(8,"Comment_id:")
+	call append(9,"status: draft")
 endfunction
 
 function! ToHtml()
@@ -50,6 +59,8 @@ endfunction
 
 :nmap <silent> <F2> :call TitleInsert()<CR>ggA
 ":nmap <silent> <F3> :call DiaryInsert()<CR>ggjjjA
+"
+:autocmd FileWritePre,BufWritePre *.md ks|call DateInsert()|'s
 
 :nmap <silent> <F5> :call ToHtml()<CR>
 :nmap <silent> <F6> :call ToPdf0()<CR>
