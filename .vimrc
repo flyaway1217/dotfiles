@@ -8,7 +8,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Bundle 'gmarik/Vundle'
 "Bundle 'vim-pandoc/vim-pandoc'
 
-Plugin 'SirVer/ultisnips'
+"Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/nerdtree'
 
@@ -24,7 +24,8 @@ Plugin 'https://github.com/nathangrigg/vim-beancount.git'
 "Plugin 'vim-scripts/winmanager'
 "Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-fugitive'
-Plugin 'waylan/python-markdown'
+"Plugin 'waylan/python-markdown'
+Plugin 'drmingdrmer/vim-syntax-markdown'
 
 Plugin 'https://github.com/moll/vim-bbye'
 Plugin 'https://github.com/vim-scripts/svg.vim.git'

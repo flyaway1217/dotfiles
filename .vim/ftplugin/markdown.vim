@@ -17,6 +17,9 @@ set foldlevel=99
 
 "md文件映射YAML
 ":map <F2> ggO---<Esc>olayout:<Esc>otitle:<Esc>otime:<Esc>ocategory:<Esc>o---<Esc>ggjA
+"
+
+
 
 function! DateInsert()
 	call cursor(7,1)
@@ -76,3 +79,4 @@ auto VimEnter * :Voom markdown
 "wincmd p
 auto VimEnter * wincmd w
 :set textwidth=60 fo+=mM
+
