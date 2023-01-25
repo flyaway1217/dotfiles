@@ -9,15 +9,16 @@ Plugin 'VundleVim/Vundle.vim'
 "Bundle 'vim-pandoc/vim-pandoc'
 
 "Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+"Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/nerdtree'
 
 Plugin 'vim-voom/VooM'
+"Plugin 'vimoutliner/vimoutliner'
 Plugin 'Yggdroot/indentLine'
 Plugin 'bling/vim-airline'
 "Plugin 'lokaltog/vim-powerline'
 Plugin 'scrooloose/nerdcommenter'
-"Plugin "moll/vim-bbye"
+Plugin 'moll/vim-bbye'
 "Plugin "tmhedberg/SimpylFold"
 Plugin 'https://github.com/scrooloose/syntastic.git'
 Plugin 'https://github.com/nathangrigg/vim-beancount.git'
@@ -27,7 +28,7 @@ Plugin 'tpope/vim-fugitive'
 "Plugin 'waylan/python-markdown'
 Plugin 'drmingdrmer/vim-syntax-markdown'
 
-Plugin 'https://github.com/moll/vim-bbye'
+" Plugin 'https://github.com/moll/vim-bbye'
 Plugin 'https://github.com/vim-scripts/svg.vim.git'
 "Plugin 'zxqfl/tabnine-vim'
 "Plugin 'valloric/youcompleteme'
@@ -40,9 +41,11 @@ Plugin 'https://github.com/ervandew/supertab.git'
 Plugin 'https://github.com/rizzatti/dash.vim.git'
 "Plugin 'https://github.com/kshenoy/vim-signature.git'
 Plugin 'https://github.com/majutsushi/tagbar.git'
+"Plugin 'rafi/awesome-vim-colorschemes'
+Plugin 'fugalh/desert.vim'
 
 "JavaScript"
-Plugin 'https://github.com/pangloss/vim-javascript.git'
+"Plugin 'https://github.com/pangloss/vim-javascript.git'
 "Plugin 'https://github.com/vim-latex/vim-latex.git'
 
 "Plugin 'https://github.com/sontek/minibufexpl.vim.git'
@@ -71,10 +74,11 @@ filetype plugin indent on
 " Put your non-Plugin stuff after this line
 
 set number
-colorscheme desert
 filetype plugin indent on
 syntax enable
 syntax on
+set background=dark
+colorscheme desert
 
 set cursorcolumn
 set cursorline
@@ -174,5 +178,7 @@ let g:syntastic_tex_checkers = ['lacheck']
 if has("autocmd")
     au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 endif
+
+let g:tex_conceal = ""
 
 

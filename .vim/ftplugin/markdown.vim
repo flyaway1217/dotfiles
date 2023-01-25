@@ -22,10 +22,10 @@ set foldlevel=99
 
 
 function! DateInsert()
-	call cursor(7,1)
-	if search('Modified') != 0
+	call cursor(1,1)
+	if search('modified') != 0
 		let line = line('.')
-		call setline(line,"Modified: " . strftime("%Y-%m-%d %H:%M"))
+		call setline(line,"modified: " . strftime("%Y-%m-%d %H:%M"))
 	endif
 endfunction
 
@@ -42,32 +42,13 @@ function! TitleInsert()
 	call append(9,"status: draft")
 endfunction
 
-function! ToHtml()
-	exec 'w'
-	exec "!pandoc  -s -S --self-contained -c style.css % -o %<.html "
-endfunction
 
-function! ToPdf0()
-	exec 'w'
-	exec "!pandoc  % -o %<.pdf --latex-engine=xelatex --template=pm-template.latex "
-endfunction
-
-function! ToPdf1()
-	exec 'w'
-	exec "!pandoc --smart % -o %<.pdf --latex-engine=xelatex --template=pm-template.latex --bibliography=%<.bib"
-endfunction
-
-
-
+:nmap cite i<d-cite key=""></d-cite><ESC>lxx10hi
 
 :nmap <silent> <F2> :call TitleInsert()<CR>ggA
 ":nmap <silent> <F3> :call DiaryInsert()<CR>ggjjjA
 "
 :autocmd FileWritePre,BufWritePre *.md ks|call DateInsert()|'s
-
-:nmap <silent> <F5> :call ToHtml()<CR>
-:nmap <silent> <F6> :call ToPdf0()<CR>
-:nmap <silent> <F7> :call ToPdf1()<CR>
 
 :inoremap $ $$<ESC>i
 
