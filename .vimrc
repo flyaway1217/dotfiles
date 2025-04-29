@@ -5,6 +5,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'HerringtonDarkholme/yats.vim'
 "Bundle 'gmarik/Vundle'
 "Bundle 'vim-pandoc/vim-pandoc'
 
@@ -43,6 +45,8 @@ Plugin 'https://github.com/rizzatti/dash.vim.git'
 Plugin 'https://github.com/majutsushi/tagbar.git'
 "Plugin 'rafi/awesome-vim-colorschemes'
 Plugin 'fugalh/desert.vim'
+Plugin 'chase/vim-ansible-yaml'
+Plugin 'pedrohdz/vim-yaml-folds'
 
 "JavaScript"
 "Plugin 'https://github.com/pangloss/vim-javascript.git'

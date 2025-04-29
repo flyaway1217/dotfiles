@@ -48,7 +48,7 @@ endfunction
 :nmap <silent> <F2> :call TitleInsert()<CR>ggA
 ":nmap <silent> <F3> :call DiaryInsert()<CR>ggjjjA
 "
-:autocmd FileWritePre,BufWritePre *.md ks|call DateInsert()|'s
+":autocmd FileWritePre,BufWritePre *.md ks|call DateInsert()|'s
 
 :inoremap $ $$<ESC>i
 
@@ -59,5 +59,5 @@ endfunction
 auto VimEnter * :Voom markdown
 "wincmd p
 auto VimEnter * wincmd w
-:set textwidth=60 fo+=mM
+":set textwidth=60 fo+=mM
 
