@@ -7,8 +7,6 @@ require("lsp")
 -- require("lazy").setup("plugins")
 --
 
-vim.cmd.colorscheme("tokyonight")
-
 require("lspconfig").ltex.setup({
 	settings = {
 		ltex = {
@@ -18,3 +16,10 @@ require("lspconfig").ltex.setup({
 		},
 	},
 })
+
+local lspconfig = require("lspconfig")
+lspconfig.beancount.setup = {
+	init_options = {
+		journal_file = "~/workspace/Git/Zhou-Li-Ledger/main.bean",
+	},
+}
