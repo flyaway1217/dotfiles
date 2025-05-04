@@ -18,8 +18,10 @@ require("lspconfig").ltex.setup({
 })
 
 local lspconfig = require("lspconfig")
-lspconfig.beancount.setup = {
+lspconfig.beancount.setup({
+	cmd = { "beancount-language-server" },
+	filetypes = { "beancount" },
 	init_options = {
 		journal_file = "~/workspace/Git/Zhou-Li-Ledger/main.bean",
 	},
-}
+})
