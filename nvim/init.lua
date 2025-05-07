@@ -25,3 +25,5 @@ lspconfig.beancount.setup({
 		journal_file = "~/workspace/Git/Zhou-Li-Ledger/main.bean",
 	},
 })
+
+vim.cmd("colorscheme catppuccin-frappe")

@@ -25,7 +25,6 @@ return {
 	},
 	config = function(_, opts)
 		require("kanagawa").setup(opts)
-		vim.cmd("colorscheme kanagawa-dragon")
 	end,
 	build = function()
 		vim.cmd("KanagawaCompile")
