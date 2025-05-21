@@ -1,3 +1,4 @@
+init.lua
 require("options")
 require("keymaps")
 require("config.lazy")
@@ -11,8 +12,16 @@ require("lspconfig").ltex.setup({
 	settings = {
 		ltex = {
 			dictionary = {
-				["en-US"] = { "Beancount", "Fava", "Fava-Dashboards", "Sankey", "pyenv" },
+				["en-US"] = { "Beancount", "Fava", "Fava-Dashboards", "Sankey", "pyenv", "CoA" },
 			},
+		},
+	},
+})
+
+require("lspconfig").pyright.setup({
+	settings = {
+		python = {
+			pythonPath = vim.fn.exepath("python3"),
 		},
 	},
 })
@@ -27,3 +36,4 @@ lspconfig.beancount.setup({
 })
 
 vim.cmd("colorscheme catppuccin-frappe")
+vim.lsp.set_log_level("off")
